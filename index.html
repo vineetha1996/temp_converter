@@ -1,28 +1,21 @@
-<!DOCTYPE html5>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Temperature Converter</title>
-</head>
-
+<!DOCTYPE html>
+<html>
+<title>Celsius to Kelvin Temperature Converter</title>
 <body>
-	<div class="card">
-		<label>Celsius</label>
-		<input id="inputCel" type="number" placeholder="enter a number" oninput="convoCel(this.value)">
-		<span id="outputCel"></span>
-	</div>
 
-	<div class="card">
-		<label>Kelvin</label>
-		<input id="inputKel" type="number" placeholder="enter a number" oninput="convoKel(this.value)">
-		<span id="outputKel"></span>
-	</div>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Celsius field to convert the value to Kelvin:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
 
 <script src="script.js"></script>
+
+
 
 </body>
 </html>
